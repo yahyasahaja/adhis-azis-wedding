@@ -1,11 +1,15 @@
 <template>
   <main>
-    <router-view></router-view>
+    Detail
   </main>
 </template>
 
 <script>
 export default {
-  name: 'App',
+
 }
 </script>
+
+<style>
+
+</style>

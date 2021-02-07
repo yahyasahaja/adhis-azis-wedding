@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'AlexBrush';
+  src:  url('/fonts/AlexBrush-Regular.ttf') format('truetype');
+}
+
+.wedding-font {
+  font-family: 'AlexBrush', 'Open Sans', sans-serif;
+}
+
+.bg-pastel {
+  background: url('/images/pastel-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-flower {
+  background: url('/images/flower-bg.jpg');
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.bg-pink-flower {
+  background: url('/images/pink-flower-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.bg-blue-flower {
+  background: url('/images/blue-flower-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #2c3e50;
+}
