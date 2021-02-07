@@ -94,11 +94,11 @@
               <div class="wedding-font text-3xl">
                 Abdul Azis
               </div>
-              <div class="text-xs md:text-base">
+              <div class="text-sm md:text-base">
                 <span class="font-bold">Putra dari</span>
                 <div>
                   Bapak Alm. Muhammad Zein<br/>
-                  & Emnah
+                  & Ibu Emnah
                 </div>
               </div>
             </div>
