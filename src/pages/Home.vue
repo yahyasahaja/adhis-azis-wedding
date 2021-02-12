@@ -1,7 +1,7 @@
 <template>
   <main class="min-h-screen">
     <section class="bg-pastel text-center flex justify-center items-center min-h-screen px-5">
-      <div class="detail text-xl font-thin p-5 max-w-lg m-auto detail">
+      <div class="detail text-sm md:text-xl font-base md:font-thin p-5 max-w-lg m-auto">
         <div class="wedding-font text-3xl mb-1" >Mohon Doa Restu</div>
         <div class="mb-1">Assalamualaikum Wr. Wb.</div>
         <div>
@@ -70,9 +70,9 @@
                 <div class="wedding-font text-3xl">
                   Adhis Fajriana
                 </div>
-                <div class="text-xs md:text-base">
-                  <span class="font-bold">Putri dari</span>
-                  <div>
+                <div class="text-xs font-normal md:text-base">
+                  <span>Putri dari</span>
+                  <div class="font-semibold">
                     Bapak Tri Agus Haryanto <br/>
                     & Ibu Nursabiha
                   </div>
@@ -90,9 +90,9 @@
                 <div class="wedding-font text-3xl">
                   Abdul Azis
                 </div>
-                <div class="text-xs md:text-base">
-                  <span class="font-bold">Putra dari</span>
-                  <div>
+                <div class="text-xs font-normal md:text-base">
+                  <span>Putra dari</span>
+                  <div class="font-semibold">
                     Bapak Alm. Muhammad Zein<br/>
                     & Ibu Emnah
                   </div>
@@ -117,7 +117,7 @@
         </div>
       </div>
     </section>
-    <section class="p-5 bg-flower">
+    <section class="p-5 pb-10 bg-flower">
       <div class="w-full h-full top-0 left-0 absolute" style="background: rgb(0 0 0 / 62%)"/>
       <div class="m-auto text-center relative text-white">
         <div class="wedding-font text-4xl py-5 font-bold">
