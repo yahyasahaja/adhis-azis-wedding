@@ -2,7 +2,8 @@
   <main class="min-h-screen">
     <section class="bg-pastel text-center flex justify-center items-center min-h-screen px-5">
       <div class="detail text-xl font-thin p-5 max-w-lg m-auto detail">
-        <div>Assalamualaikum Wr. Wb.</div>
+        <div class="wedding-font text-3xl mb-1" >Mohon Doa Restu</div>
+        <div class="mb-1">Assalamualaikum Wr. Wb.</div>
         <div>
           {{ $t('messages.opening') }} <span class="font-bold">{{ $t('messages.dear', { nama }) }}</span>
         </div>
@@ -16,7 +17,7 @@
           {{$t('messages.savedate')}}
         </div>
         <div>
-          <span class="font-normal">{{ date1 }}</span>
+          <span class="font-normal">Jumat, 12 Maret 2021</span>
         </div>
         <div v-if="jam" class="font-normal">
           {{$t('messages.savetime')}} {{ jam }}:00
@@ -160,14 +161,14 @@ export default {
       const { jam } = this.$route.query || {}; // indonesia english jawa
       return jam;
     },
-    date1() {
-      const tanggal = this.tanggal || 12;
-      return this.formatDate(new Date(`2021-3-${tanggal} ${this.jam || 10}:00:00`));
-    },
-    date2() {
-      const tanggal = 13;
-      return this.formatDate(new Date(`2021-3-${tanggal} ${this.jam || 10}:00:00`));
-    }
+    // date1() {
+    //   const tanggal = this.tanggal || 12;
+    //   return this.formatDate(new Date(`2021-03-${tanggal}T${this.jam || 10}:00:00Z`));
+    // },
+    // date2() {
+    //   const tanggal = 13;
+    //   return this.formatDate(new Date(`2021-03-${tanggal}T${this.jam || 10}:00:00Z`));
+    // }
   },
   watch: {
     bahasa: {
