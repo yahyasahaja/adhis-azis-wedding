@@ -42,7 +42,7 @@ export default new VueI18n({
         dear: 'kami mengundang {nama}',
         invited: 'untuk menghadiri acara pernikahan anak kami',
         with: 'dengan',
-        savedate: 'Pada tanggal:',
+        savedate: 'Pada hari/tanggal:',
         savetime: 'Pukul'
       }
     },

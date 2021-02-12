@@ -90,7 +90,7 @@
                   Abdul Azis
                 </div>
                 <div class="text-xs md:text-base">
-                  <span class="font-bold">Putri dari</span>
+                  <span class="font-bold">Putra dari</span>
                   <div>
                     Bapak Alm. Muhammad Zein<br/>
                     & Ibu Emnah
