@@ -17,6 +17,26 @@
   background-position: center;
 }
 
+.bg-adhis {
+  background: url('/images/adhis-photo.jpeg');
+  background-size: cover;
+  background-position: -100px -100px;
+  background-repeat: no-repeat;
+  background-color: #cac5c2;
+  box-shadow: 1px 8px 50px #00000054;
+  border: 1px solid white;
+}
+
+.bg-azis {
+  background: url('/images/azis-photo.jpeg');
+  background-size: cover;
+  background-position: -100px -80px;
+  background-repeat: no-repeat;
+  background-color: #aedcd7;
+  box-shadow: 1px 8px 50px #00000054;
+  border: 1px solid white;
+}
+
 .bg-flower {
   background: url('/images/flower-bg.jpg');
   background-size: cover;
@@ -27,6 +47,12 @@
 
 .bg-pink-flower {
   background: url('/images/pink-flower-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-wall-pink {
+  background: url('/images/wall-pink-bg.jpg');
   background-size: cover;
   background-position: center;
   position: relative;

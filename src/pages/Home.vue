@@ -2,27 +2,21 @@
   <main class="min-h-screen">
     <section class="bg-pastel text-center flex justify-center items-center min-h-screen px-5">
       <div class="detail text-xl font-thin p-5 max-w-lg m-auto detail">
-        <div class="font-bold">
-          {{ $t('messages.dear', { nama }) }}
+        <div>Assalamualaikum Wr. Wb.</div>
+        <div>
+          {{ $t('messages.opening') }} <span class="font-bold">{{ $t('messages.dear', { nama }) }}</span>
         </div>
         <div>
           {{ $t('messages.invited') }}
         </div>
-        <div>
-          {{ $t('messages.celebration') }}
-        </div>
-        <div class="wedding-font text-5xl my-5" >
-          Azis & Adhis
+        <div class="wedding-font text-5xl my-5 flex items-center justify-center" >
+          Adhis <div class="text-2xl mx-3">{{$t('messages.with')}}</div> Azis
         </div>
         <div>
           {{$t('messages.savedate')}}
         </div>
         <div>
           <span class="font-normal">{{ date1 }}</span>
-          <template v-if="!tanggal">
-            <div> or </div>
-            <div class="font-normal">{{ date2 }}</div>
-          </template>
         </div>
         <div v-if="jam" class="font-normal">
           {{$t('messages.savetime')}} {{ jam }}:00
@@ -51,7 +45,6 @@
     <section class="bg-flower text-center p-10 font-thin">
       <div class="w-full h-full top-0 left-0 absolute" style="background: rgb(0 0 0 / 62%)"/>
       <div class="text-center text-white relative max-w-xl m-auto" style="z-index: 10">
-        <div class="wedding-font text-3xl">Assalamualaikum</div>
         <div class="pt-5 pb-5">
           "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
           pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung
@@ -65,31 +58,48 @@
       </div>
     </section>
 
-    <section class="text-center p-10 font-thin bg-blue-flower">
-      <div class="w-full h-full top-0 left-0 absolute" style="background: rgb(180 213 243 / 74%);" />
+    <section class="text-center p-10 font-thin bg-wall-pink">
+      <!-- <div class="w-full h-full top-0 left-0 absolute" style="background: rgb(180 213 243 / 74%);" /> -->
       <div class="max-w-2xl m-auto relative">
         <div class="flex justify-end mb-10">
-          <div class="text-right w-96 p-5 rounded-lg flex bg-pink-flower">
-            <div class="mr-3 flex-1">
-              <div class="wedding-font text-3xl">
-                Adhis Fajriana
-              </div>
-              <div class="text-xs md:text-base">
-                <span class="font-bold">Putri dari</span>
-                <div>
-                  Bapak Tri Agus Haryanto <br/>
-                  & Ibu Nursabiha
+          <div class="text-right w-96 rounded-lg flex overflow-hidden bg-adhis">
+            <div class="relative w-full h-full p-5">
+              <!-- <div class="bg-pink-flower opacity-30 w-full h-full absolute top-0 left-0" /> -->
+              <div class="mr-3 flex-1 relative">
+                <div class="wedding-font text-3xl">
+                  Adhis Fajriana
+                </div>
+                <div class="text-xs md:text-base">
+                  <span class="font-bold">Putri dari</span>
+                  <div>
+                    Bapak Tri Agus Haryanto <br/>
+                    & Ibu Nursabiha
+                  </div>
                 </div>
               </div>
-            </div>
-            <div style="width: 80px">
-              <img class="w-full h-full object-contain" src="/images/azis2.jpg" />
             </div>
           </div>
         </div>
 
         <div class="flex justify-start">
-          <div class="text-left w-96 p-5 rounded-lg flex flex-row-reverse bg-pink-flower">
+          <div class="text-right w-96 rounded-lg flex overflow-hidden bg-azis">
+            <div class="relative w-full h-full p-5">
+              <!-- <div class="bg-pink-flower opacity-50 w-full h-full absolute top-0 left-0" /> -->
+              <div class="mr-3 flex-1 relative">
+                <div class="wedding-font text-3xl">
+                  Abdul Azis
+                </div>
+                <div class="text-xs md:text-base">
+                  <span class="font-bold">Putri dari</span>
+                  <div>
+                    Bapak Alm. Muhammad Zein<br/>
+                    & Ibu Emnah
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="text-right w-96 p-5 rounded-lg flex bg-azis">
             <div class="ml-3 flex-1">
               <div class="wedding-font text-3xl">
                 Abdul Azis
@@ -102,10 +112,7 @@
                 </div>
               </div>
             </div>
-            <div style="width: 80px">
-              <img class="w-full h-full object-contain" src="/images/azis2.jpg" />
-            </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -115,9 +122,10 @@
         <div class="wedding-font text-4xl py-5 font-bold">
           Map Location
         </div>
-        <div class="max-w-2xl m-auto">
+        <a href="https://goo.gl/maps/6TggezHKK2uge3KY9" target="_blank" class="max-w-2xl m-auto relative block">
+          <div class="absolute w-full h-full" style="z-index: 10" />
           <map-view class="w-full" />
-        </div>
+        </a>
       </div>
     </section>
   </main>
