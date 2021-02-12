@@ -38,7 +38,7 @@ export default new VueI18n({
     },
     'indonesia': {
       messages: {
-        opening: 'Dengan memohon rahmat dan ridho Allah SWT, ',
+        opening: 'Dengan memohon rahmat dan ridho Allah SWT,',
         dear: 'kami mengundang {nama}',
         invited: 'untuk menghadiri acara pernikahan anak kami',
         with: 'dengan',

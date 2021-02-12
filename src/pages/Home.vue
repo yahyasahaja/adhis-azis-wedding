@@ -1,15 +1,18 @@
 <template>
   <main class="min-h-screen">
     <section class="bg-pastel text-center flex justify-center items-center min-h-screen px-5">
-      <div class="detail text-sm md:text-xl font-base md:font-thin p-5 max-w-lg m-auto">
+      <div class="detail text-md md:text-xl font-base md:font-thin p-5 max-w-lg m-auto">
         <div class="wedding-font text-3xl mb-1" >Mohon Doa Restu</div>
         <div class="mb-1">Assalamualaikum Wr. Wb.</div>
         <div>
-          {{ $t('messages.opening') }} <span class="font-bold">{{ $t('messages.dear', { nama }) }}</span>
+
         </div>
         <div>
-          {{ $t('messages.invited') }}
+          {{ $t('messages.opening') }} <span class="font-bold">{{ $t('messages.dear', { nama }) }}</span> {{ $t('messages.invited') }}
         </div>
+        <!-- <div>
+          {{ $t('messages.invited') }}
+        </div> -->
         <div class="wedding-font text-5xl my-5 flex items-center justify-center" >
           Adhis <div class="text-2xl mx-3">{{$t('messages.with')}}</div> Azis
         </div>
@@ -17,9 +20,9 @@
           {{$t('messages.savedate')}}
         </div>
         <div>
-          <span class="font-normal">Jumat, 12 Maret 2021</span>
+          <span class="font-bold">Jumat, 12 Maret 2021</span>
         </div>
-        <div v-if="jam" class="font-normal">
+        <div v-if="jam" class="font-bold">
           {{$t('messages.savetime')}} {{ jam }}:00
         </div>
         <div class="mt-5">
