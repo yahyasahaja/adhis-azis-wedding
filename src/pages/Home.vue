@@ -122,7 +122,11 @@
         <div class="wedding-font text-4xl py-5 font-bold">
           Map Location
         </div>
-        <a href="https://goo.gl/maps/6TggezHKK2uge3KY9" target="_blank" class="max-w-2xl m-auto relative block">
+        <a
+          href="https://goo.gl/maps/6TggezHKK2uge3KY9"
+          target="_blank"
+          class="max-w-2xl m-auto relative block rounded-lg overflow-hidden"
+        >
           <div class="absolute w-full h-full" style="z-index: 10" />
           <map-view class="w-full" />
         </a>
