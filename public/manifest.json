@@ -1,7 +1,7 @@
 {
-  "name": "Game Voucher VIP",
-  "short_name": "Game Voucher VIP",
-  "description": "Beli Game Voucher lewat Bukalapak!",
+  "name": "Pernikahan Name",
+  "short_name": "Pernikahan Short Name",
+  "description": "Pernikahan Desc",
   "start_url": "/",
   "icons": [
     {
